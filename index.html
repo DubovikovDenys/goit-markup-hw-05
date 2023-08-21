@@ -476,29 +476,29 @@
         <!--Modal Form-->
         <form class="modal-form" name="review_from">
           <div class="modal-form-box">
-            <label class="modal-form-label" for="user_name">Name</label>
+            <label class="modal-form-label" for="user-name">Name</label>
             <div class="modal-form-field">
               <input
                 class="modal-form-input"
                 type="text"
-                name="user_name"
-                id="user_name"
+                name="user-name"
+                id="user-name"
                 placeholder=""
               />
-              <svg class="modal-form-icon" width="18px" height="18px">
+              <svg class="modal-form-icon" width="18px" height="24px">
                 <use href="./images/icons.svg#name-icon"></use>
               </svg>
             </div>
           </div>
 
           <div class="modal-form-box">
-            <label class="modal-form-label" for="user_phone">Phone</label>
+            <label class="modal-form-label" for="user-phone">Phone</label>
             <div class="modal-form-field">
               <input
                 class="modal-form-input"
                 type="tel"
-                name="user_phone"
-                id="user_phone"
+                name="user-phone"
+                id="user-phone"
                 placeholder=""
               />
               <svg class="modal-form-icon" width="18px" height="24px">
@@ -522,41 +522,36 @@
               </svg>
             </div>
           </div>
-          <div class="div modal-form-comment-box">
-            <label class="modal-form-label" for="user_comment">Comment</label>
+          <div class="modal-form-comment-box">
+            <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-form-text"
-              name="user_comment"
-              id="user_comment"
+              name="user-comment"
+              id="user-comment"
               rows="8"
               placeholder="Text input"
             ></textarea>
           </div>
           <div class="modal-form-agreement-box">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
             <label class="modal-form-agreement" for="user-privacy">
-              <input
-                class="visually-hidden"
-                type="checkbox"
-                id="user-privacy"
-                name="user_agreement"
-                value="yes"
-              />
               <span class="agreement-checkbox">
                 <svg class="agreement-checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#success-icon"></use>
-                </svg>
-              </span>
-              <span class="modal-form-desc"
-                >I accept the terms and conditions of the
-                <a
-                  class="modal-form-link"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferref"
-                  >Privacy Policy</a
-                ></span
-              >
-            </label>
+                  <use href="./images/icons.svg#success-icon"></use></svg></span
+              >I accept the terms and conditions of the<a
+                class="modal-form-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferref"
+                >Privacy Policy</a
+              ></label
+            >
           </div>
           <button class="modal-form-btn button" type="submit">Send</button>
         </form>
