@@ -539,7 +539,7 @@ nav {
   outline: transparent;
   color: var(--primary-white);
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
 }
 
@@ -547,10 +547,11 @@ nav {
   color: var(--primary-white);
 }
 .footer-form-btn {
+  min-width: 165px;
   display: inline-flex;
   padding: 8px 24px;
+  justify-content: center;
   align-items: center;
-  gap: 16px;
   color: var(--primary-white);
   border-radius: 4px;
   background-color: var(--primary-interactive-color);
@@ -562,6 +563,7 @@ nav {
 
 .footer-form-btn-icon {
   fill: var(--primary-white);
+  margin-left: 16px;
 }
 
 /**
